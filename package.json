@@ -1,0 +1,23 @@
+{
+  "name": "qavajs-playwright-electron-demo",
+  "version": "1.0.0",
+  "description": "qavajs playwright electron demo",
+  "main": "index.js",
+  "scripts": {
+    "test:web": "npx playwright test --config playwright.web.config.ts",
+    "test:hybrid": "npx playwright test --config playwright.hybrid.config.ts",
+    "debug:web": "npx playwright test --ui --config playwright.web.config.ts",
+    "debug:hybrid": "npx playwright test --ui --config playwright.hybrid.config.ts"
+  },
+  "author": "Oleksandr Halichenko",
+  "license": "MIT",
+  "dependencies": {
+    "@cucumber/cucumber": "^11.0.1",
+    "@faker-js/faker": "^9.2.0",
+    "@qavajs/memory": "^1.10.2",
+    "@qavajs/playwright": "^2.2.0",
+    "@qavajs/playwright-runner-adapter": "^0.7.0",
+    "dotenv": "^16.4.5",
+    "electron": "^33.0.2"
+  }
+}
